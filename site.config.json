@@ -1,0 +1,331 @@
+{
+  "_note": "Single source of truth for site-wide values and the page manifest. The nav link list itself lives in exactly one place: partials/header.html. Run `node build.js` after editing anything here or in partials/ or src/.",
+  "siteUrl": "",
+  "_siteUrl": "TODO — set the production origin (e.g. https://boundlessgracia.org/) to emit absolute <link rel=canonical> and absolute sitemap URLs. While empty the build emits document-relative canonicals, which are valid but weak for SEO.",
+  "donateUrl": "donate.html",
+  "_donateUrl": "TODO — DECISION NEEDED. content.json gives the canonical donation endpoint as https://donate.boundlessgracia.org/give, but that host does not resolve in DNS. Every donate CTA is routed to the internal donate.html page until a working endpoint is confirmed. Change this one value to switch the whole site over; ?fund= params are appended per-CTA via donateFunds below.",
+  "donateFunds": {
+    "health": "?fund=health",
+    "livelihoods": "?fund=livelihoods",
+    "education": "?fund=education",
+    "clinic": "?fund=clinic",
+    "sponsorship": "?fund=sponsorship"
+  },
+  "_donateFunds": "Only appended when donateUrl points at a real donation endpoint. While donateUrl is the internal page these are dropped, because donate.html has no fund routing.",
+  "social": {
+    "facebook": null,
+    "youtube": null,
+    "instagram": null,
+    "linkedin": null,
+    "x": null
+  },
+  "_social": "TODO — BGCF's real profile URLs are unknown. content.json site.social lists all five as \"#\". Per instruction, no URLs are invented: a null here omits that icon from the header and footer entirely rather than emitting href=\"#\", which is an accessibility and SEO defect. Fill any value in and its icon reappears in both places automatically.",
+  "org": {
+    "legalName": "Boundless Gracia Children's Foundation Limited",
+    "phone": "+256 773 130 832",
+    "email": "boundlessgracialtd@gmail.com"
+  },
+  "pages": [
+    {
+      "file": "index.html",
+      "navSlug": "/",
+      "title": "Boundless Gracia Children's Foundation — Empowering Children. Transforming Lives",
+      "description": "BGCF is a non-profit, non-partisan child-focused organisation in Kyegegwa District, Uganda, working with orphaned and vulnerable children through health, education and livelihoods.",
+      "breadcrumb": null,
+      "script": "assets/js/home.js"
+    },
+    {
+      "file": "we-heal.html",
+      "navSlug": "/what-we-do",
+      "title": "We Heal — Boundless Gracia Children's Foundation",
+      "description": "We Heal — BGCF's health, nutrition and WASH programme: community outreaches, malnutrition screening, immunisation and maternal referral, safe water and hygiene.",
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "index.html"
+        },
+        {
+          "label": "What We Do"
+        },
+        {
+          "label": "We Heal"
+        }
+      ]
+    },
+    {
+      "file": "we-educate.html",
+      "navSlug": "/what-we-do",
+      "title": "We Educate — Boundless Gracia Children's Foundation",
+      "description": "We Educate — BGCF's education and child development programme: sponsorship, scholastic materials, early childhood and remedial learning, vocational training and mentorship.",
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "index.html"
+        },
+        {
+          "label": "What We Do"
+        },
+        {
+          "label": "We Educate"
+        }
+      ]
+    },
+    {
+      "file": "we-empower.html",
+      "navSlug": "/what-we-do",
+      "title": "We Empower — Boundless Gracia Children's Foundation",
+      "description": "We Empower — BGCF's livelihoods and protection programme: village savings groups, enterprise and financial literacy training, start-up grants and climate-smart agriculture.",
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "index.html"
+        },
+        {
+          "label": "What We Do"
+        },
+        {
+          "label": "We Empower"
+        }
+      ]
+    },
+    {
+      "file": "vision-mission-values.html",
+      "navSlug": "/our-story",
+      "title": "Vision, Mission & Values — Boundless Gracia Children's Foundation",
+      "description": "Who BGCF is, the vision and mission set out in our Constitution, the three programme pillars, and the values we hold ourselves to.",
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "index.html"
+        },
+        {
+          "label": "Our Story"
+        },
+        {
+          "label": "Vision, Mission & Values"
+        }
+      ]
+    },
+    {
+      "file": "our-impact.html",
+      "navSlug": "/our-story",
+      "title": "Our Impact — Boundless Gracia Children's Foundation",
+      "description": "BGCF's results framework targets for 2026–2030, how we count them, and the annual reports and audited accounts we publish against them.",
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "index.html"
+        },
+        {
+          "label": "Our Story"
+        },
+        {
+          "label": "Our Impact"
+        }
+      ],
+      "script": "assets/js/impact.js"
+    },
+    {
+      "file": "our-team.html",
+      "navSlug": "/our-story",
+      "title": "Our Team — Boundless Gracia Children's Foundation",
+      "description": "The Board of Trustees, Board of Directors and Senior Management Team of BGCF, and what each role is accountable for.",
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "index.html"
+        },
+        {
+          "label": "Our Story"
+        },
+        {
+          "label": "Our Team"
+        }
+      ],
+      "script": "assets/js/team.js"
+    },
+    {
+      "file": "sponsor-a-child.html",
+      "navSlug": "/get-involved",
+      "title": "Sponsor a Child — Boundless Gracia Children's Foundation",
+      "description": "Sponsor a child through primary, secondary or vocational education from $38 a month — what it covers, and how sponsorship is matched and reported.",
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "index.html"
+        },
+        {
+          "label": "Get Involved"
+        },
+        {
+          "label": "Sponsor a Child"
+        }
+      ],
+      "script": "assets/js/sponsor.js"
+    },
+    {
+      "file": "heal-a-child.html",
+      "navSlug": "/get-involved",
+      "title": "Heal a Child — Boundless Gracia Children's Foundation",
+      "description": "Fund the consultation, medicine, referral transport and follow-up visit for a child whose household could not have paid for any of them.",
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "index.html"
+        },
+        {
+          "label": "Get Involved"
+        },
+        {
+          "label": "Heal a Child"
+        }
+      ]
+    },
+    {
+      "file": "build-a-clinic.html",
+      "navSlug": "/get-involved",
+      "title": "Build a Clinic — Boundless Gracia Children's Foundation",
+      "description": "Help build a health facility at Mpara so care no longer depends on a half-day walk — the plan, the budget and where the appeal currently stands.",
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "index.html"
+        },
+        {
+          "label": "Get Involved"
+        },
+        {
+          "label": "Build a Clinic"
+        }
+      ],
+      "script": "assets/js/clinic.js"
+    },
+    {
+      "file": "outreach-missions.html",
+      "navSlug": "/get-involved",
+      "title": "Outreach Missions — Boundless Gracia Children's Foundation",
+      "description": "Join a BGCF outreach mission to Kyegegwa District — what to expect, what it costs, the application process and how to apply.",
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "index.html"
+        },
+        {
+          "label": "Get Involved"
+        },
+        {
+          "label": "Outreach Missions"
+        }
+      ],
+      "script": "assets/js/mission.js"
+    },
+    {
+      "file": "volunteer.html",
+      "navSlug": "/get-involved",
+      "title": "Volunteer With Us — Boundless Gracia Children's Foundation",
+      "description": "Volunteer with BGCF — how we work with volunteers, the next mission, and a year-by-year archive of the outreaches that have already run.",
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "index.html"
+        },
+        {
+          "label": "Get Involved"
+        },
+        {
+          "label": "Volunteer With Us"
+        }
+      ],
+      "script": "assets/js/volunteer.js"
+    },
+    {
+      "file": "empower-a-mother.html",
+      "navSlug": "/get-involved",
+      "title": "Empower a Mother — Boundless Gracia Children's Foundation",
+      "description": "Back a caregiver into a savings group, business training and a start-up grant, so a household can carry its own children.",
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "index.html"
+        },
+        {
+          "label": "Get Involved"
+        },
+        {
+          "label": "Empower a Mother"
+        }
+      ]
+    },
+    {
+      "file": "gallery.html",
+      "navSlug": "/stories",
+      "title": "Gallery — Boundless Gracia Children's Foundation",
+      "description": "Photographs from BGCF outreaches, classrooms, savings groups and household visits across Kyegegwa District.",
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "index.html"
+        },
+        {
+          "label": "Gallery"
+        }
+      ],
+      "script": "assets/js/gallery.js"
+    },
+    {
+      "file": "contact.html",
+      "navSlug": "/contact",
+      "title": "Contact Us — Boundless Gracia Children's Foundation",
+      "description": "Get in touch with Boundless Gracia Children's Foundation in Mpara Village, Kyegegwa District, Uganda — by form, phone or email.",
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "index.html"
+        },
+        {
+          "label": "Contact Us"
+        }
+      ],
+      "script": "assets/js/contact.js"
+    },
+    {
+      "file": "donate.html",
+      "navSlug": null,
+      "title": "Donate — Boundless Gracia Children's Foundation",
+      "description": "How to give to Boundless Gracia Children's Foundation while our online donation platform is being set up.",
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "index.html"
+        },
+        {
+          "label": "Donate"
+        }
+      ]
+    },
+    {
+      "file": "thank-you.html",
+      "navSlug": null,
+      "noindex": true,
+      "title": "Thank You — Boundless Gracia Children's Foundation",
+      "description": "Your message has been received by Boundless Gracia Children's Foundation.",
+      "breadcrumb": [
+        {
+          "label": "Home",
+          "href": "index.html"
+        },
+        {
+          "label": "Thank You"
+        }
+      ]
+    },
+    {
+      "file": "404.html",
+      "navSlug": null,
+      "noindex": true,
+      "title": "Page Not Found — Boundless Gracia Children's Foundation",
+      "description": "That page does not exist. Find your way back into the Boundless Gracia Children's Foundation site.",
+      "breadcrumb": null
+    }
+  ]
+}

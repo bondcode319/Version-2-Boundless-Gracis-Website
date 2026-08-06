@@ -1,0 +1,150 @@
+<!--! ==========================================================================
+     Site header — THE ONLY COPY. Every page in the served root is generated
+     from this file by build.js. Edit the nav here and nowhere else, then
+     re-run `node build.js`.
+
+     Tokens build.js substitutes:
+       {{DONATE}}        the donate destination from site.config.json
+       {{SOCIAL_TOP}}    social icons, white; entries with a null URL are omitted
+       {{SOCIAL_*}}      see partials/footer.html
+     Active state: build.js adds aria-current="true" to the [data-nav-link]
+     whose data-slug matches the page's navSlug, and aria-current="page" to
+     any nav/drawer link whose href is the page itself.
+     ========================================================================== -->
+<header class="site-header" data-bgcf-header>
+
+  <div class="header-utility">
+    <a class="header-utility__donate" href="{{DONATE}}">Donate Now</a>
+    <div class="header-utility__spacer" aria-hidden="true"></div>
+    {{SOCIAL_TOP}}
+  </div>
+
+  <div class="header-bar">
+    <div class="header-bar__inner">
+
+      <a class="badge" href="index.html">
+        <span class="badge__lockup">
+          <img class="badge__mark" src="assets/brand/logo-mark.png" alt="" width="191" height="209">
+          <span>
+            <span class="badge__name">BOUNDLESS GRACIA</span>
+            <span class="badge__sub">Children&rsquo;s Foundation</span>
+          </span>
+        </span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Main menu">
+        <div class="nav-list">
+
+          <div class="nav-item" data-nav-item>
+            <a class="nav-link" href="index.html" data-nav-link data-slug="/">Home</a>
+          </div>
+
+          <div class="nav-item" data-nav-item>
+            <button type="button" class="nav-link" data-nav-link data-slug="/what-we-do" aria-expanded="false">
+              What We Do
+              <img src="assets/icons/chevron-down-emerald.svg" alt="" width="9" height="9">
+            </button>
+            <div class="nav-panel" data-nav-panel>
+              <a href="we-heal.html">We Heal</a>
+              <a href="we-educate.html">We Educate</a>
+              <a href="we-empower.html">We Empower</a>
+            </div>
+          </div>
+
+          <div class="nav-item" data-nav-item>
+            <button type="button" class="nav-link" data-nav-link data-slug="/our-story" aria-expanded="false">
+              Our Story
+              <img src="assets/icons/chevron-down-emerald.svg" alt="" width="9" height="9">
+            </button>
+            <div class="nav-panel nav-panel--wide" data-nav-panel>
+              <a href="vision-mission-values.html">Vision, Mission &amp; Values</a>
+              <a href="our-impact.html">Our Impact</a>
+              <a href="our-team.html">Our Team</a>
+            </div>
+          </div>
+
+          <div class="nav-item" data-nav-item>
+            <button type="button" class="nav-link" data-nav-link data-slug="/get-involved" aria-expanded="false">
+              Get Involved
+              <img src="assets/icons/chevron-down-emerald.svg" alt="" width="9" height="9">
+            </button>
+            <div class="nav-panel nav-panel--involved" data-nav-panel>
+              <a href="sponsor-a-child.html">Sponsor a Child</a>
+              <a href="heal-a-child.html">Heal a Child</a>
+              <a href="build-a-clinic.html">Build a Clinic</a>
+              <a href="outreach-missions.html">Outreach Missions</a>
+              <a href="volunteer.html">Volunteer With Us</a>
+              <a href="empower-a-mother.html">Empower a Mother</a>
+            </div>
+          </div>
+
+          <div class="nav-item" data-nav-item>
+            <!--! /stories (blog index + single-post template) is not designed.
+                 content.json flags this nav item as mislabelled: it points at
+                 the gallery. Rename to "Gallery" or build /stories. -->
+            <a class="nav-link" href="gallery.html" data-nav-link data-slug="/stories">Stories</a>
+          </div>
+
+          <div class="nav-item" data-nav-item>
+            <a class="nav-link" href="contact.html" data-nav-link data-slug="/contact">Contact Us</a>
+          </div>
+
+        </div>
+      </nav>
+
+      <a class="header-donate" href="{{DONATE}}">Donate Now</a>
+
+      <button type="button" class="burger" data-bgcf-burger aria-expanded="false" aria-controls="bgcf-drawer" aria-label="Open menu">
+        <img data-burger-icon src="assets/icons/menu-white.svg" alt="" width="24" height="24">
+      </button>
+
+    </div>
+
+    <div class="drawer" id="bgcf-drawer" data-bgcf-drawer hidden>
+      <a class="drawer__link" href="index.html">Home</a>
+
+      <div class="drawer__group" data-acc>
+        <button type="button" class="drawer__trigger" data-acc-trigger aria-expanded="false">
+          What We Do
+          <img data-acc-chev src="assets/icons/chevron-down-gold.svg" alt="" width="18" height="18">
+        </button>
+        <div class="drawer__panel" data-acc-panel hidden>
+          <a href="we-heal.html">We Heal</a>
+          <a href="we-educate.html">We Educate</a>
+          <a href="we-empower.html">We Empower</a>
+        </div>
+      </div>
+
+      <div class="drawer__group" data-acc>
+        <button type="button" class="drawer__trigger" data-acc-trigger aria-expanded="false">
+          Our Story
+          <img data-acc-chev src="assets/icons/chevron-down-gold.svg" alt="" width="18" height="18">
+        </button>
+        <div class="drawer__panel" data-acc-panel hidden>
+          <a href="vision-mission-values.html">Vision, Mission &amp; Values</a>
+          <a href="our-impact.html">Our Impact</a>
+          <a href="our-team.html">Our Team</a>
+        </div>
+      </div>
+
+      <div class="drawer__group" data-acc>
+        <button type="button" class="drawer__trigger" data-acc-trigger aria-expanded="false">
+          Get Involved
+          <img data-acc-chev src="assets/icons/chevron-down-gold.svg" alt="" width="18" height="18">
+        </button>
+        <div class="drawer__panel" data-acc-panel hidden>
+          <a href="sponsor-a-child.html">Sponsor a Child</a>
+          <a href="heal-a-child.html">Heal a Child</a>
+          <a href="build-a-clinic.html">Build a Clinic</a>
+          <a href="outreach-missions.html">Outreach Missions</a>
+          <a href="volunteer.html">Volunteer With Us</a>
+          <a href="empower-a-mother.html">Empower a Mother</a>
+        </div>
+      </div>
+
+      <a class="drawer__link" href="gallery.html">Stories</a>
+      <a class="drawer__link" href="contact.html">Contact Us</a>
+    </div>
+
+  </div>
+</header>

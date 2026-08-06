@@ -1,0 +1,96 @@
+<!--! STEP 5. content.json names https://donate.boundlessgracia.org/give as the
+     canonical donation endpoint, but that host does not resolve in DNS. Every
+     donate CTA on the site routes here instead of at a dead external URL.
+     To switch the whole site over once a real endpoint exists, change
+     donateUrl in site.config.json and re-run the build — this page can then
+     be dropped from site.config.json's page list. -->
+<main id="bgcf-main">
+
+  <section class="confirm-band" aria-labelledby="dn-h">
+    <div class="confirm-band__inner">
+      <span class="confirm-band__mark" aria-hidden="true">
+        <img src="assets/icons/hand-heart-gold.svg" alt="" width="42" height="42">
+      </span>
+      <p class="confirm-band__eyebrow">Donate</p>
+      <h1 id="dn-h">How to give, today</h1>
+      <p>Our online donation platform is being set up. Until it is live, every one of these routes reaches the same account and the same acknowledgement.</p>
+    </div>
+  </section>
+
+{{BREADCRUMB}}
+
+  <section class="section" aria-labelledby="dn-how">
+    <div class="wrap--narrow">
+      <h2 class="section-title principles__title" id="dn-how">Three ways to give now</h2>
+      <span class="rule rule--center rule--tight" aria-hidden="true"></span>
+      <p class="section-intro">Tell us which programme you want your gift to fund &mdash; health, education or livelihoods &mdash; and it is coded to that fund in our accounts and reported against it.</p>
+
+      <div class="next-grid">
+
+        <div class="next-card">
+          <img src="assets/icons/mail-emerald.svg" alt="" width="44" height="44">
+          <h3>Email us</h3>
+          <p>Write to us with the amount and the fund you have in mind. We reply with the bank and mobile-money details, and a receipt once the gift lands.</p>
+          <a class="text-link" href="mailto:boundlessgracialtd@gmail.com?subject=I%20would%20like%20to%20donate">Start by email</a>
+        </div>
+
+        <div class="next-card next-card--navy">
+          <img src="assets/icons/phone-gold.svg" alt="" width="44" height="44">
+          <h3>Call the office</h3>
+          <p>Monday to Friday, 8:30am&ndash;5:00pm East Africa Time. Useful if you are giving from within Uganda or want to arrange a standing order.</p>
+          <a class="btn btn--primary btn--sm" href="tel:+256773130832">+256 773 130 832</a>
+        </div>
+
+        <div class="next-card">
+          <img src="assets/icons/users-emerald.svg" alt="" width="44" height="44">
+          <h3>Use the enquiry form</h3>
+          <p>Prefer to write it all down? The contact form reaches the same inbox, and you can ask for the due-diligence pack at the same time.</p>
+          <a class="text-link" href="contact.html">Open the form</a>
+        </div>
+
+      </div>
+
+      <p class="callout">
+        <strong>A note on transparency.</strong> No card data is handled anywhere on this site. Gifts are recorded against our results framework, reviewed quarterly by the Board, and reported in the annual report and audited accounts &mdash; see <a href="our-impact.html">Our Impact</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--surface" aria-labelledby="dn-funds">
+    <div class="wrap--narrow">
+      <h2 class="section-title principles__title" id="dn-funds">What your gift is coded to</h2>
+      <span class="rule rule--center rule--tight" aria-hidden="true"></span>
+      <ul class="values-grid">
+        <li class="value-card">
+          <img src="assets/icons/check-gold.svg" alt="" width="26" height="26">
+          <span><strong>Health &amp; WASH</strong><span>The consultation, the medicine, the referral transport and the follow-up visit &mdash; plus safe water points and hygiene promotion. <a href="we-heal.html">We Heal</a>.</span></span>
+        </li>
+        <li class="value-card">
+          <img src="assets/icons/check-gold.svg" alt="" width="26" height="26">
+          <span><strong>Education</strong><span>Fees, uniform, scholastic materials and remedial support, with a named case worker following each child. <a href="we-educate.html">We Educate</a>.</span></span>
+        </li>
+        <li class="value-card">
+          <img src="assets/icons/check-gold.svg" alt="" width="26" height="26">
+          <span><strong>Livelihoods &amp; protection</strong><span>Savings groups, enterprise training and start-up grants, so a household can carry its own children. <a href="we-empower.html">We Empower</a>.</span></span>
+        </li>
+        <li class="value-card">
+          <img src="assets/icons/check-gold.svg" alt="" width="26" height="26">
+          <span><strong>The Mpara clinic</strong><span>Bricks, cement, sand and the solar cold chain for a facility that removes the half-day walk entirely. <a href="build-a-clinic.html">Build a Clinic</a>.</span></span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="cta-band__inner">
+      <h2>Regular beats large</h2>
+      <span class="rule" aria-hidden="true"></span>
+      <p>A monthly gift is the only income a case worker can plan a school year or a treatment course around. Sponsorship is the simplest way to set one up.</p>
+      <div class="cta-band__actions">
+        <a class="btn btn--primary" href="sponsor-a-child.html">Sponsor a Child</a>
+        <a class="btn btn--ghost" href="contact.html">Talk To Us</a>
+      </div>
+    </div>
+  </section>
+
+</main>

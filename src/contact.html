@@ -1,0 +1,121 @@
+<main id="bgcf-main">
+
+  <section class="page-hero">
+    <div class="page-hero__media">
+      <img src="assets/photos/director-two-children.jpg"
+           alt="A BGCF staff member with two children at a village outreach"
+           width="1080" height="607" fetchpriority="high" decoding="async">
+    </div>
+    <div class="page-hero__scrim" aria-hidden="true"></div>
+    <div class="page-hero__body">
+      <p class="page-hero__eyebrow">Contact us</p>
+      <h1 class="page-hero__title">Get in touch</h1>
+      <p class="page-hero__sub">Questions about a sponsorship, a partnership, our accounts or our safeguarding policy &mdash; all of it comes to a real person.</p>
+      <a class="btn btn--primary" href="mailto:boundlessgracialtd@gmail.com">Email us directly</a>
+    </div>
+  </section>
+
+{{BREADCRUMB}}
+
+  <section class="section" aria-labelledby="c-form">
+    <div class="wrap">
+      <h2 class="section-title principles__title" id="c-form">Tell us what you need</h2>
+      <span class="rule rule--center rule--tight" aria-hidden="true"></span>
+      <p class="section-intro">We answer every message within five working days. If your enquiry concerns the safety of a child, write <strong>SAFEGUARDING</strong> in the first line and it is escalated the same day.</p>
+
+      <div class="contact-cols">
+
+        <!--! Client-validated only. Wire to Contact Form 7 or inc/ajax.php
+             with bgcf_verify_request(), a honeypot and rate limiting before
+             launch. Submitting redirects to thank-you.html. -->
+        <form class="form-grid" data-contact-form novalidate>
+          <div class="field">
+            <label for="c-name">Name <span class="req">*</span></label>
+            <input id="c-name" name="name" type="text" required autocomplete="name">
+            <p class="field-error" data-err></p>
+          </div>
+
+          <div class="field">
+            <label for="c-email">Email <span class="req">*</span></label>
+            <input id="c-email" name="email" type="email" required autocomplete="email">
+            <p class="field-error" data-err></p>
+          </div>
+
+          <div class="field">
+            <label for="c-phone">Phone</label>
+            <input id="c-phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+
+          <fieldset class="fieldset">
+            <legend>How should we get back to you? <span class="req">*</span></legend>
+            <div class="radio-row">
+              <label for="c-reply-phone"><input id="c-reply-phone" name="reply" type="radio" value="phone" required>Phone</label>
+              <label for="c-reply-email"><input id="c-reply-email" name="reply" type="radio" value="email">Email</label>
+            </div>
+            <p class="field-error" data-err></p>
+          </fieldset>
+
+          <div class="field">
+            <label for="c-message">Message <span class="req">*</span></label>
+            <textarea id="c-message" name="message" rows="6" required></textarea>
+            <p class="field-error" data-err></p>
+          </div>
+
+          <div class="field field--spam">
+            <label for="c-spam">Anti-spam: what is <span data-sum-a>7</span> + <span data-sum-b>4</span>? <span class="req">*</span></label>
+            <input class="is-narrow" id="c-spam" name="spam" type="text" inputmode="numeric" required autocomplete="off">
+            <p class="field-error" data-err></p>
+          </div>
+
+          <p class="form-status" data-contact-status role="status"></p>
+          <button type="submit" class="btn-solid btn-solid--submit">Submit</button>
+        </form>
+
+        <div class="contact-aside">
+          <div class="contact-card">
+            <h3>Boundless Gracia Children&rsquo;s Foundation Ltd</h3>
+            <div class="contact-list">
+              <p>
+                <img src="assets/icons/map-pin-gold.svg" alt="" width="22" height="22">
+                <span>Mpara Village, Kyegegwa District, Uganda<br>P.O. Box <em>pending</em>, Kampala</span>
+              </p>
+              <p>
+                <img src="assets/icons/phone-gold.svg" alt="" width="22" height="22">
+                <a href="tel:+256773130832">+256 773 130 832</a>
+              </p>
+              <p>
+                <img src="assets/icons/mail-gold.svg" alt="" width="22" height="22">
+                <a href="mailto:boundlessgracialtd@gmail.com">boundlessgracialtd@gmail.com</a>
+              </p>
+              <p>
+                <img src="assets/icons/clock-gold.svg" alt="" width="22" height="22">
+                <span>Monday &ndash; Friday, 8:30am &ndash; 5:00pm EAT<br>Closed on public holidays</span>
+              </p>
+            </div>
+            {{SOCIAL_CONTACT}}
+          </div>
+
+          <div class="map-wrap">
+            <iframe title="Map showing Kyegegwa District, Uganda, where BGCF is based" loading="lazy"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=30.65%2C0.32%2C31.05%2C0.62&amp;layer=mapnik&amp;marker=0.4761%2C30.8517"></iframe>
+          </div>
+          <p class="map-note">Our registered office is at Mpara Village, Kyegegwa District. Please call before visiting &mdash; field staff are often at outreach sites.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="cta-band__inner">
+      <h2>Due diligence welcome</h2>
+      <span class="rule" aria-hidden="true"></span>
+      <p>Institutional funders: our constitution, organogram, strategic plan, safeguarding policy and audited accounts are available on request, and we will complete your due diligence questionnaire.</p>
+      <div class="cta-band__actions">
+        <a class="btn btn--primary" href="mailto:boundlessgracialtd@gmail.com?subject=Due%20diligence%20pack%20request">Request the pack</a>
+        <a class="btn btn--ghost" href="our-impact.html">See our impact</a>
+      </div>
+    </div>
+  </section>
+
+</main>

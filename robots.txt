@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Sitemap: set siteUrl in site.config.json to emit an absolute sitemap URL

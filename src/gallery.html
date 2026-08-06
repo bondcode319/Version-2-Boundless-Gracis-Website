@@ -1,0 +1,185 @@
+<!--! Two frames from the design's eighteen could not be transferred:
+     photos/girl-holding-supplies.jpg and photos/mother-two-girls-supplies.jpg
+     both exceed the 256 KiB cap on the design API's file read, so they came
+     back truncated. Copy them out of the design project by hand, drop them in
+     assets/photos/, then add two <figure data-item data-batch="2"> blocks
+     here — the Load More count and the lightbox both read the DOM, so they
+     pick the new frames up with no other change. -->
+<main id="bgcf-main">
+
+  <section class="page-hero">
+    <div class="page-hero__media">
+      <img src="assets/photos/children-eating-meal.jpg"
+           alt="A wide view of a BGCF outreach — children eating together on tarpaulins under the trees"
+           width="1080" height="607" fetchpriority="high" decoding="async">
+    </div>
+    <div class="page-hero__scrim" aria-hidden="true"></div>
+    <div class="page-hero__body">
+      <p class="page-hero__eyebrow">Stories</p>
+      <h1 class="page-hero__title">Gallery</h1>
+      <p class="page-hero__sub">Photographs from our outreaches, distributions and household visits &mdash; published only where consent covers publication.</p>
+      <a class="btn btn--primary" href="{{DONATE}}">Support this work</a>
+    </div>
+  </section>
+
+{{BREADCRUMB}}
+
+  <section class="section" aria-labelledby="g-grid">
+    <div class="wrap">
+      <h2 class="section-title principles__title" id="g-grid">2023 &ndash; 2026</h2>
+      <span class="rule rule--center rule--tight" aria-hidden="true"></span>
+      <p class="section-intro">Photographs from our distributions, feeding sessions and household visits in Kyegegwa District. Select any frame to open it full size, with arrow keys to move through the set.</p>
+
+      <div class="masonry" data-masonry>
+
+        <figure data-item data-batch="1">
+          <button type="button" class="masonry__btn" data-open>
+            <span class="frame frame--m"><img src="assets/photos/team-supplies-laid-out.jpg" alt="The BGCF team with a full distribution laid out and checked" width="1080" height="607" loading="lazy" decoding="async"></span>
+          </button>
+          <figcaption>The BGCF team with a full distribution checked and laid out before the children arrive</figcaption>
+        </figure>
+
+        <figure data-item data-batch="1">
+          <button type="button" class="masonry__btn" data-open>
+            <span class="frame frame--s"><img src="assets/photos/pupils-queue-distribution.jpg" alt="Pupils queue beside the distribution tarpaulin" width="1080" height="607" loading="lazy" decoding="async"></span>
+          </button>
+          <figcaption>Pupils queue beside the distribution tarpaulin, Mpara</figcaption>
+        </figure>
+
+        <figure data-item data-batch="1">
+          <button type="button" class="masonry__btn" data-open>
+            <span class="frame frame--m"><img src="assets/photos/children-eating-meal.jpg" alt="The hot meal at the close of a distribution day" width="1080" height="607" loading="lazy" decoding="async"></span>
+          </button>
+          <figcaption>The hot meal at the close of a distribution day</figcaption>
+        </figure>
+
+        <figure data-item data-batch="1">
+          <button type="button" class="masonry__btn" data-open>
+            <span class="frame frame--xl"><img src="assets/photos/girl-green-tee-books.jpg" alt="A girl carries new exercise books, pens and a drink" width="1080" height="607" loading="lazy" decoding="async"></span>
+          </button>
+          <figcaption>New exercise books, pens and a drink &mdash; one child&rsquo;s share</figcaption>
+        </figure>
+
+        <figure data-item data-batch="1">
+          <button type="button" class="masonry__btn" data-open>
+            <span class="frame frame--l"><img src="assets/photos/mother-daughter-red-uniform.jpg" alt="A guardian and the girl she cares for, with new pencils" width="1080" height="607" loading="lazy" decoding="async"></span>
+          </button>
+          <figcaption>A guardian and the girl she cares for, with new school pencils</figcaption>
+        </figure>
+
+        <figure data-item data-batch="1">
+          <button type="button" class="masonry__btn" data-open>
+            <span class="frame frame--l"><img src="assets/photos/two-boys-tree-books.jpg" alt="Two brothers compare their new exercise books under a tree" width="1080" height="607" loading="lazy" decoding="async"></span>
+          </button>
+          <figcaption>Two brothers compare their new exercise books under a tree</figcaption>
+        </figure>
+
+        <figure data-item data-batch="1">
+          <button type="button" class="masonry__btn" data-open>
+            <span class="frame frame--m"><img src="assets/photos/outreach-crowd-selfie.jpg" alt="Children with their new books at a BGCF outreach" width="1080" height="607" loading="lazy" decoding="async"></span>
+          </button>
+          <figcaption>Children with their new books at a BGCF outreach</figcaption>
+        </figure>
+
+        <figure data-item data-batch="1">
+          <button type="button" class="masonry__btn" data-open>
+            <span class="frame frame--m"><img src="assets/photos/feeding-toddler-cup.jpg" alt="A staff member holds a cup for a small child at a feeding session" width="1080" height="607" loading="lazy" decoding="async"></span>
+          </button>
+          <figcaption>A staff member holds a cup for a small child at a feeding session</figcaption>
+        </figure>
+
+        <figure data-item data-batch="2">
+          <button type="button" class="masonry__btn" data-open>
+            <span class="frame frame--s"><img src="assets/photos/staff-two-toddlers.jpg" alt="A staff member with two toddlers in a village compound" width="1080" height="607" loading="lazy" decoding="async"></span>
+          </button>
+          <figcaption>A staff member with two toddlers in a village compound</figcaption>
+        </figure>
+
+        <figure data-item data-batch="2">
+          <button type="button" class="masonry__btn" data-open>
+            <span class="frame frame--xl"><img src="assets/photos/staff-twin-girls-field.jpg" alt="A staff member with two girls in matching dresses on open ground" width="1080" height="607" loading="lazy" decoding="async"></span>
+          </button>
+          <figcaption>A staff member with two girls in matching dresses on open ground</figcaption>
+        </figure>
+
+        <figure data-item data-batch="2">
+          <button type="button" class="masonry__btn" data-open>
+            <span class="frame frame--s"><img src="assets/photos/household-visit-family.jpg" alt="A household visit with four children outside their home" width="1080" height="607" loading="lazy" decoding="async"></span>
+          </button>
+          <figcaption>A household visit &mdash; four children outside their family home</figcaption>
+        </figure>
+
+        <figure data-item data-batch="2">
+          <button type="button" class="masonry__btn" data-open>
+            <span class="frame frame--l"><img src="assets/photos/distributing-drinks.jpg" alt="Drinks handed into a crowd of raised hands" width="1080" height="607" loading="lazy" decoding="async"></span>
+          </button>
+          <figcaption>Drinks handed into a forest of raised hands</figcaption>
+        </figure>
+
+        <figure data-item data-batch="2">
+          <button type="button" class="masonry__btn" data-open>
+            <span class="frame frame--l"><img src="assets/photos/children-reaching-drinks.jpg" alt="Children reaching for drinks at the end of a camp" width="1080" height="607" loading="lazy" decoding="async"></span>
+          </button>
+          <figcaption>Children reaching for drinks at the end of a camp</figcaption>
+        </figure>
+
+        <figure data-item data-batch="2">
+          <button type="button" class="masonry__btn" data-open>
+            <span class="frame frame--xl"><img src="assets/photos/pupils-blue-uniform-writing.jpg" alt="A pupil in blue uniform writes in her new exercise book" width="1080" height="607" loading="lazy" decoding="async"></span>
+          </button>
+          <figcaption>A pupil in blue uniform writes in her new exercise book</figcaption>
+        </figure>
+
+        <figure data-item data-batch="2">
+          <button type="button" class="masonry__btn" data-open>
+            <span class="frame frame--s"><img src="assets/photos/director-two-children.jpg" alt="A staff member with two children at an outreach" width="1080" height="607" loading="lazy" decoding="async"></span>
+          </button>
+          <figcaption>A staff member with two children at an outreach</figcaption>
+        </figure>
+
+        <figure data-item data-batch="2">
+          <button type="button" class="masonry__btn" data-open>
+            <span class="frame frame--l"><img src="assets/photos/boy-roadside.jpg" alt="A boy sits at the roadside near his home in Kyegegwa District" width="1080" height="607" loading="lazy" decoding="async"></span>
+          </button>
+          <figcaption>A boy at the roadside near his home in Kyegegwa District</figcaption>
+        </figure>
+
+      </div>
+
+      <p class="load-more-wrap">
+        <button type="button" class="btn-solid" data-load-more hidden>Load More</button>
+      </p>
+      <p class="load-status" data-load-status role="status">Showing all 16 photographs</p>
+    </div>
+  </section>
+
+  <div class="lightbox" data-lightbox role="dialog" aria-modal="true" aria-label="Photograph viewer" hidden>
+    <button type="button" class="lightbox__round lightbox__close" data-lb-close aria-label="Close viewer">
+      <img src="assets/icons/close-white.svg" alt="" width="22" height="22">
+    </button>
+    <div class="lightbox__stage" data-lb-stage></div>
+    <p class="lightbox__caption" data-lb-caption></p>
+    <div class="lightbox__nav">
+      <button type="button" class="lightbox__round" data-lb-prev aria-label="Previous photograph">
+        <img src="assets/icons/chevron-left-white.svg" alt="" width="24" height="24">
+      </button>
+      <p class="lightbox__index" data-lb-index></p>
+      <button type="button" class="lightbox__round" data-lb-next aria-label="Next photograph">
+        <img src="assets/icons/chevron-right-white.svg" alt="" width="24" height="24">
+      </button>
+    </div>
+  </div>
+
+  <section class="cta-band">
+    <div class="cta-band__inner">
+      <h2>Behind every frame is a household we can name</h2>
+      <span class="rule" aria-hidden="true"></span>
+      <p>We photograph the work, not the poverty &mdash; and never a child whose guardian has not agreed in writing to the picture being published.</p>
+      <div class="cta-band__actions">
+        <a class="btn btn--primary" href="{{DONATE}}">Donate Now</a>
+        <a class="btn btn--ghost" href="contact.html">Talk To Us</a>
+      </div>
+    </div>
+  </section>
+
+</main>

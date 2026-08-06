@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Boundless Gracia Children's Foundation">
+  <!-- Placeholder mark: brand navy ground with the logo's gold star and the
+       cupping-hand curve. Cut a proper favicon from the original vector when
+       the designer supplies it — the design README lists it as outstanding. -->
+  <rect width="64" height="64" rx="12" fill="#113662"/>
+  <path d="M32 14l3.2 6.9 7.6.9-5.6 5.1 1.5 7.4L32 30.6l-6.7 3.7 1.5-7.4-5.6-5.1 7.6-.9z" fill="#F7B322"/>
+  <path d="M16 40c4.6 7.2 10.1 10.8 16 10.8S43.4 47.2 48 40" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+</svg>

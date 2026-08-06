@@ -1,0 +1,124 @@
+<!--! We Heal — the master pattern for all three programme pages. -->
+<main id="bgcf-main">
+
+  <!--! Page hero. Maps to partials/blocks/block-hero.php; the design's props
+       (eyebrow, title, subtitle, ctaLabel, ctaHref, slot*) are the ACF field
+       names to create. -->
+  <section class="page-hero">
+    <div class="page-hero__media">
+      <img src="assets/photos/children-eating-meal.jpg"
+           alt="Children seated on a tarpaulin under a tree sharing a hot meal at a BGCF outreach"
+           width="1080" height="607" fetchpriority="high" decoding="async">
+    </div>
+    <div class="page-hero__scrim" aria-hidden="true"></div>
+    <div class="page-hero__body">
+      <p class="page-hero__eyebrow">What we do</p>
+      <h1 class="page-hero__title">We Heal</h1>
+      <p class="page-hero__sub">Health, nutrition and WASH for children and mothers in communities where the nearest facility is hours away on foot.</p>
+      <a class="btn btn--primary" href="heal-a-child.html">Heal a Child</a>
+    </div>
+  </section>
+
+{{BREADCRUMB}}
+
+  <section class="split" aria-labelledby="wh-why">
+    <div class="split__inner">
+      <div>
+        <p class="eyebrow">The problem</p>
+        <h2 class="section-title" id="wh-why">Distance is the diagnosis</h2>
+        <span class="rule" aria-hidden="true"></span>
+        <p class="lede">A treatable fever becomes an emergency when the health centre is a half-day walk and the household has no transport money. Malnutrition goes unnoticed until a child is visibly wasting. An expectant mother delivers at home because the clinic is unreachable after dark.</p>
+        <p class="lede">Our health work exists to shorten that distance &mdash; physically, through outreaches and water points close to home, and financially, by removing the cost that stops a caregiver from seeking care at all.</p>
+      </div>
+      <div class="media">
+        <img src="assets/photos/household-visit-family.jpg"
+             alt="A BGCF staff member with four children outside their mud-brick family home, hours from the nearest clinic"
+             width="1080" height="607" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <section class="split split--surface" aria-labelledby="wh-do">
+    <div class="split__inner">
+      <div class="media">
+        <img src="assets/photos/feeding-toddler-cup.jpg"
+             alt="A BGCF staff member holds a cup for a small child during a supplementary feeding session"
+             width="1080" height="607" loading="lazy" decoding="async">
+      </div>
+      <div>
+        <p class="eyebrow">What we do</p>
+        <h2 class="section-title" id="wh-do">Five activities, one continuous system</h2>
+        <span class="rule" aria-hidden="true"></span>
+        <ul class="ticklist">
+          <li>
+            <img src="assets/icons/check-emerald.svg" alt="" width="22" height="22">
+            <span>Community health outreaches and medical camps run jointly with district health teams.</span>
+          </li>
+          <li>
+            <img src="assets/icons/check-emerald.svg" alt="" width="22" height="22">
+            <span>Malnutrition screening with supplementary feeding or referral, and follow-up until a child recovers.</span>
+          </li>
+          <li>
+            <img src="assets/icons/check-emerald.svg" alt="" width="22" height="22">
+            <span>Immunisation, antenatal care and skilled-delivery mobilisation and referral.</span>
+          </li>
+          <li>
+            <img src="assets/icons/check-emerald.svg" alt="" width="22" height="22">
+            <span>Safe water points constructed or rehabilitated, with household sanitation and hygiene promotion.</span>
+          </li>
+          <li>
+            <img src="assets/icons/check-emerald.svg" alt="" width="22" height="22">
+            <span>Menstrual health education and supplies, so that a period never costs a girl a week of school.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote-band">
+    <figure>
+      <img class="quote-band__mark" src="assets/icons/quote-gold.svg" alt="" width="56" height="56">
+      <blockquote>A child out of school is usually also a child who is hungry, unwell, unprotected, or living in a household with no reliable income. Treating one strand and calling it a programme is how good intentions fail.</blockquote>
+      <figcaption>BGCF Strategic Plan 2026&ndash;2030</figcaption>
+    </figure>
+  </section>
+
+  <section class="principles" aria-labelledby="wh-how">
+    <div class="wrap">
+      <h2 class="section-title principles__title" id="wh-how">How we hold ourselves to it</h2>
+      <span class="rule rule--center" aria-hidden="true"></span>
+      <div class="principles__grid">
+        <div>
+          <img src="assets/icons/shield-check-emerald.svg" alt="" width="46" height="46">
+          <h3>Consent before publicity</h3>
+          <p>No identifiable image or personal detail of a child is published without documented, informed guardian consent. Every staff member, volunteer and visiting partner signs our safeguarding policy.</p>
+        </div>
+        <div>
+          <img src="assets/icons/users-emerald.svg" alt="" width="46" height="46">
+          <h3>With the district, not beside it</h3>
+          <p>Outreaches are planned with district health teams and referrals go into the public system. We are not building a parallel service that collapses when funding moves on.</p>
+        </div>
+        <div>
+          <img src="assets/icons/droplet-emerald.svg" alt="" width="46" height="46">
+          <h3>Counted, then reported</h3>
+          <p>Every child screened, treated or referred is recorded against our results framework, reviewed quarterly by the Board and published in the annual report and audited accounts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--! Closing CTA band — every inner page ends with one.
+       Maps to partials/blocks/block-cta.php. -->
+  <section class="cta-band">
+    <div class="cta-band__inner">
+      <h2>Care should not depend on how far you can walk</h2>
+      <span class="rule" aria-hidden="true"></span>
+      <p>Your gift funds the consultation, the medicine, the referral transport and the follow-up visit &mdash; for a child whose household could not have paid for any of them.</p>
+      <div class="cta-band__actions">
+        <a class="btn btn--primary" href="heal-a-child.html">Heal a Child</a>
+        <a class="btn btn--ghost" href="contact.html">Talk To Us</a>
+      </div>
+    </div>
+  </section>
+
+</main>
