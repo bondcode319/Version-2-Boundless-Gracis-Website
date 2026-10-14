@@ -1,0 +1,172 @@
+<main id="main">
+
+  <section class="page-hero">
+    <div class="page-hero__media">
+      <img src="assets/photos/staff-twin-girls-field.jpg" alt="A Boundless Gracia staff member with two girls during a field visit" width="1080" height="607" fetchpriority="high" decoding="async">
+    </div>
+    <div class="page-hero__scrim" aria-hidden="true"></div>
+    <div class="page-hero__inner">
+      <p class="page-hero__eyebrow">Contact us</p>
+      <h1>Get in touch</h1>
+      <p class="page-hero__sub">Questions about sponsorship, a partnership, our accounts or our safeguarding policy &mdash; all of it reaches a real person.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="mailto:boundlessgracialtd@gmail.com">Email us directly</a>
+        <a class="btn btn--ghost" href="tel:+256773130832">+256 773 130 832</a>
+      </div>
+    </div>
+  </section>
+
+{{BREADCRUMB}}
+
+  <section class="section" aria-labelledby="c-form">
+    <div class="wrap">
+      <div class="head-center">
+        <p class="eyebrow">Send a message</p>
+        <h2 id="c-form">Tell us what you need</h2>
+        <span class="rule rule--center" aria-hidden="true"></span>
+        <p class="section-intro">We answer every message within five working days. If your enquiry concerns the safety of a child, write <strong>SAFEGUARDING</strong> in the first line and it is escalated the same day. If a child is in immediate danger, contact the Police first.</p>
+      </div>
+
+      <div class="contact-cols">
+
+        <!--! Client-validated only. Wire to your form backend, add server-side
+             validation and rate limiting, then keep the honeypot. Submitting
+             redirects to thank-you.html. -->
+        <form class="form-grid" data-validate data-success="thank-you.html" novalidate>
+          <div class="field">
+            <label for="c-name">Name <span class="req">*</span></label>
+            <input id="c-name" name="name" type="text" required autocomplete="name">
+            <p class="field-error" data-err></p>
+          </div>
+
+          <div class="field">
+            <label for="c-email">Email <span class="req">*</span></label>
+            <input id="c-email" name="email" type="email" required autocomplete="email">
+            <p class="field-error" data-err></p>
+          </div>
+
+          <div class="field">
+            <label for="c-phone">Phone (optional)</label>
+            <input id="c-phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+
+          <div class="field">
+            <label for="c-topic">What is this about?</label>
+            <select id="c-topic" name="topic">
+              <option value="general">General enquiry</option>
+              <option value="sponsor">Sponsorship</option>
+              <option value="donate">Donations and payment details</option>
+              <option value="partner">Partnership or institutional funding</option>
+              <option value="volunteer">Volunteering or outreach missions</option>
+              <option value="documents">Document or due-diligence request</option>
+              <option value="safeguarding">Safeguarding concern</option>
+            </select>
+          </div>
+
+          <fieldset class="fieldset" data-required-group>
+            <legend>How should we get back to you? <span class="req">*</span></legend>
+            <div class="radio-row">
+              <label for="c-reply-email"><input id="c-reply-email" name="reply" type="radio" value="email">Email</label>
+              <label for="c-reply-phone"><input id="c-reply-phone" name="reply" type="radio" value="phone">Phone</label>
+            </div>
+            <p class="field-error" data-err></p>
+          </fieldset>
+
+          <div class="field">
+            <label for="c-message">Message <span class="req">*</span></label>
+            <textarea id="c-message" name="message" rows="6" required></textarea>
+            <p class="field-error" data-err></p>
+          </div>
+
+          <div class="field">
+            <label for="c-spam">Anti-spam: what is 7 + 4? <span class="req">*</span></label>
+            <input id="c-spam" name="spam" type="text" inputmode="numeric" data-sum="11" required autocomplete="off">
+            <p class="field-error" data-err></p>
+          </div>
+
+          <div class="honeypot" aria-hidden="true">
+            <label for="c-website">Leave this field empty</label>
+            <input id="c-website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <p class="form-status" data-status role="status"></p>
+          <button type="submit" class="btn btn--primary">Send message</button>
+        </form>
+
+        <div>
+          <div class="contact-card">
+            <h3>Boundless Gracia Children&rsquo;s Foundation Ltd</h3>
+            <div class="contact-list">
+              <p>
+                <img src="assets/icons/map-pin-gold.svg" alt="" width="22" height="22">
+                <span>Mpara Village, Kyegegwa District<br>Western Uganda</span>
+              </p>
+              <p>
+                <img src="assets/icons/phone-gold.svg" alt="" width="22" height="22">
+                <a href="tel:+256773130832">+256 773 130 832</a>
+              </p>
+              <p>
+                <img src="assets/icons/mail-gold.svg" alt="" width="22" height="22">
+                <a href="mailto:boundlessgracialtd@gmail.com">boundlessgracialtd@gmail.com</a>
+              </p>
+              <p>
+                <img src="assets/icons/clock-gold.svg" alt="" width="22" height="22">
+                <span>Monday &ndash; Friday, 8:30am &ndash; 5:00pm EAT<br>Closed on public holidays</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="map-wrap">
+            <iframe title="Map showing Kyegegwa District, Uganda, where Boundless Gracia is based" loading="lazy"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=30.65%2C0.32%2C31.05%2C0.62&amp;layer=mapnik&amp;marker=0.4761%2C30.8517"></iframe>
+          </div>
+          <p class="fineprint" style="margin-top: 0.75rem;">Our registered office is at Mpara Village, Kyegegwa District. Please call before visiting &mdash; field staff are often at outreach sites.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--surface" aria-labelledby="c-quick">
+    <div class="wrap">
+      <div class="head-center">
+        <p class="eyebrow">Shortcuts</p>
+        <h2 id="c-quick">You may not need to write at all</h2>
+        <span class="rule rule--center" aria-hidden="true"></span>
+      </div>
+      <div class="grid grid--3">
+        <div class="pillar-card">
+          <img src="assets/icons/graduation-cap-emerald.svg" alt="" width="44" height="44">
+          <h3>Sponsorship questions</h3>
+          <p>What $38 a month covers, how matching works, and what the termly report contains.</p>
+          <p><a class="text-link" href="sponsor-a-child.html">Sponsorship page</a></p>
+        </div>
+        <div class="pillar-card">
+          <img src="assets/icons/file-text-emerald.svg" alt="" width="44" height="44">
+          <h3>Documents and accounts</h3>
+          <p>What we publish, when, and how to ask for the due-diligence pack.</p>
+          <p><a class="text-link" href="governance.html">Governance page</a></p>
+        </div>
+        <div class="pillar-card">
+          <img src="assets/icons/users-emerald.svg" alt="" width="44" height="44">
+          <h3>Volunteering</h3>
+          <p>The skills we need this quarter, the vetting steps, and the ground rules.</p>
+          <p><a class="text-link" href="volunteer.html">Volunteer page</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="cta-band__inner">
+      <h2>Due diligence welcome</h2>
+      <span class="rule rule--center" aria-hidden="true"></span>
+      <p>Institutional funders: our constitution, organogram, strategic plan, safeguarding policy and audited accounts are available on request, and we will complete your questionnaire.</p>
+      <div class="btn-row btn-row--center">
+        <a class="btn btn--primary" href="mailto:boundlessgracialtd@gmail.com?subject=Due%20diligence%20pack%20request">Request the pack</a>
+        <a class="btn btn--ghost" href="our-impact.html">See our impact</a>
+      </div>
+    </div>
+  </section>
+
+</main>

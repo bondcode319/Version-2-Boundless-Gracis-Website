@@ -1,0 +1,125 @@
+<!--! ==========================================================================
+     Site footer — THE ONLY COPY. build.js writes it into every page.
+     ========================================================================== -->
+<footer class="site-footer">
+
+  <div class="site-footer__main">
+    <div class="wrap">
+      <div class="site-footer__grid">
+
+        <div>
+          <img class="site-footer__lockup" src="assets/brand/logo-reversed.png" alt="Boundless Gracia Children&rsquo;s Foundation" width="475" height="157">
+          <p>Extending grace. Restoring hope. Transforming lives. We walk with vulnerable children, teenage mothers and children with special needs &mdash; and with the households that care for them.</p>
+          <div class="badge-row">
+            <span class="badge-chip">
+              <img src="assets/icons/shield-check-gold.svg" alt="" width="15" height="15">
+              Safeguarding policy in force
+            </span>
+            <span class="badge-chip">
+              <img src="assets/icons/file-text-gold.svg" alt="" width="15" height="15">
+              Accounts published annually
+            </span>
+          </div>
+        </div>
+
+        <nav aria-label="Our work">
+          <h2>Our Work</h2>
+          <div class="site-footer__links">
+            <a href="we-educate.html">We Educate &mdash; education &amp; child development</a>
+            <a href="we-heal.html">We Heal &mdash; health, nutrition &amp; WASH</a>
+            <a href="we-protect.html">We Protect &mdash; child protection &amp; family care</a>
+            <a href="we-empower.html">We Empower &mdash; livelihoods &amp; empowerment</a>
+            <a href="our-impact.html">Our impact &amp; reports</a>
+            <a href="governance.html">Governance &amp; safeguarding</a>
+          </div>
+        </nav>
+
+        <nav aria-label="Get involved">
+          <h2>Get Involved</h2>
+          <div class="site-footer__links">
+            <a href="sponsor-a-child.html">Sponsor a child</a>
+            <a href="heal-a-child.html">Heal a child</a>
+            <a href="empower-a-mother.html">Empower a mother</a>
+            <a href="build-a-clinic.html">Build a clinic</a>
+            <a href="volunteer.html">Volunteer with us</a>
+            <a href="partner-with-us.html">Partner with us</a>
+            <a href="{{DONATE}}">Make a donation</a>
+          </div>
+        </nav>
+
+      </div>
+
+      <div class="site-footer__subscribe">
+        <div>
+          <h2>Stay with the work</h2>
+          <p>A short update four times a year: what changed in the field, what it cost, and what we got wrong. No appeals between times.</p>
+        </div>
+
+        <!--! Client-validated only. Wire the action to your list provider
+             before launch; it currently redirects to thank-you.html. -->
+        <form class="subscribe-form" data-validate data-success="thank-you.html" novalidate>
+          <div class="field">
+            <label for="sub-first">First name</label>
+            <input id="sub-first" name="first" type="text" autocomplete="given-name" required>
+            <p class="field-error" data-err></p>
+          </div>
+          <div class="field">
+            <label for="sub-last">Surname</label>
+            <input id="sub-last" name="last" type="text" autocomplete="family-name" required>
+            <p class="field-error" data-err></p>
+          </div>
+          <div class="field field--wide">
+            <label for="sub-email">Email address</label>
+            <input id="sub-email" name="email" type="email" autocomplete="email" required>
+            <p class="field-error" data-err></p>
+          </div>
+          <div class="honeypot" aria-hidden="true">
+            <label for="sub-website">Leave this field empty</label>
+            <input id="sub-website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+          <p class="form-status field--wide" data-status role="status"></p>
+          <button type="submit" class="btn btn--primary field--wide">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="site-footer__grid" style="margin-top: 2.5rem;">
+        <div>
+          <h2>Contact</h2>
+          <address>
+            Mpara Village, Kyegegwa District, Uganda<br>
+            <a href="tel:+256773130832">+256 773 130 832</a><br>
+            <a href="mailto:boundlessgracialtd@gmail.com">boundlessgracialtd@gmail.com</a><br>
+            Monday&ndash;Friday, 8:30am&ndash;5:00pm EAT
+          </address>
+        </div>
+        <nav aria-label="About">
+          <h2>About</h2>
+          <div class="site-footer__links">
+            <a href="our-story.html">Our story</a>
+            <a href="vision-mission-values.html">Vision, mission &amp; values</a>
+            <a href="our-team.html">Our team</a>
+            <a href="stories.html">Stories &amp; updates</a>
+            <a href="gallery.html">Photo gallery</a>
+            <a href="contact.html">Contact us</a>
+          </div>
+        </nav>
+        <div>
+          <h2>Legal</h2>
+          <p class="fineprint">Boundless Gracia Children&rsquo;s Foundation Limited is a non-profit, non-partisan, child-focused organisation founded in 2024 and incorporated in the Republic of Uganda as a company limited by guarantee, not having a share capital.</p>
+          <p class="fineprint">Certificate of Incorporation No. <em>pending issue</em><br>NGO Bureau Registration No. <em>pending issue</em></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="site-footer__legal">
+    <div class="site-footer__legal-inner">
+      <p>&copy; <span data-year>2026</span> Boundless Gracia Children&rsquo;s Foundation Limited. All rights reserved.</p>
+      <span class="site-footer__legal-spacer"></span>
+      {{SOCIAL_FOOTER}}
+      <p>No image or personal detail of a child is published without documented guardian consent.</p>
+    </div>
+  </div>
+
+</footer>

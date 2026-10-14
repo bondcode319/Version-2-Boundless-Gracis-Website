@@ -1,0 +1,192 @@
+<!--! Donation hub. No payment gateway is configured yet, so this page takes
+     an intent and routes it to the office rather than pretending to charge a
+     card. When a provider goes live (Flutterwave, DPO, Pesapal or a bank
+     page), point donateUrl in site.config.json at it and re-run the build to
+     switch every CTA on the site over in one step. -->
+<main id="main">
+
+  <section class="section section--ink" style="padding-top: calc(var(--header-h) + 3rem);" aria-labelledby="d-h">
+    <div class="wrap">
+      <div class="head-center">
+        <p class="eyebrow">Donate</p>
+        <h1 id="d-h">Give to the work, choose the fund</h1>
+        <span class="rule rule--center" aria-hidden="true"></span>
+        <p class="section-intro">Every gift is coded to the fund you pick, spent against an approved work plan, reviewed quarterly by the Board and reported in the annual report and audited accounts.</p>
+      </div>
+    </div>
+  </section>
+
+{{BREADCRUMB}}
+
+  <section class="section" aria-labelledby="d-form">
+    <div class="split__inner">
+      <div>
+        <h2 id="d-form" class="sr-only">Choose your gift</h2>
+        <div class="give-card">
+
+          <div class="toggle-row" role="group" aria-label="Giving frequency" data-toggle-group="freq">
+            <button type="button" data-value="monthly" aria-pressed="true">Monthly</button>
+            <button type="button" data-value="once" aria-pressed="false">One-off</button>
+          </div>
+
+          <p data-toggle-panel="freq" data-toggle-value="monthly">A monthly commitment is the income a case worker can plan a school year or a treatment course around. It is the gift we ask for first.</p>
+          <p data-toggle-panel="freq" data-toggle-value="once" hidden>A single gift is spent in the quarter it arrives, against the fund you choose. It is coded and reported in exactly the same way.</p>
+
+          <h3 style="margin-top: 1.5rem;">Choose an amount (USD)</h3>
+          <div class="amount-grid" data-amounts role="group" aria-label="Suggested amounts">
+            <button type="button" data-value="20" aria-pressed="false">$20</button>
+            <button type="button" data-value="38" aria-pressed="true">$38</button>
+            <button type="button" data-value="75" aria-pressed="false">$75</button>
+            <button type="button" data-value="150" aria-pressed="false">$150</button>
+          </div>
+
+          <form class="form-grid" data-validate data-success="thank-you.html" novalidate>
+            <div class="field">
+              <label for="d-amount">Or enter your own amount <span class="req">*</span></label>
+              <input id="d-amount" name="amount" type="text" inputmode="decimal" value="38" data-amount-custom required>
+              <p class="field-error" data-err></p>
+            </div>
+
+            <div class="field">
+              <label for="d-fund">Which fund should it go to?</label>
+              <select id="d-fund" name="fund">
+                <option value="greatest">Wherever the need is greatest</option>
+                <option value="education">Education &mdash; sponsorship and scholastic support</option>
+                <option value="health">Health, nutrition and WASH</option>
+                <option value="protection">Child protection and family strengthening</option>
+                <option value="livelihoods">Livelihoods and caregiver empowerment</option>
+                <option value="clinic">The Mpara clinic appeal</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="d-name">Your name <span class="req">*</span></label>
+              <input id="d-name" name="name" type="text" required autocomplete="name">
+              <p class="field-error" data-err></p>
+            </div>
+
+            <div class="field">
+              <label for="d-email">Email <span class="req">*</span></label>
+              <input id="d-email" name="email" type="email" required autocomplete="email">
+              <p class="field-error" data-err></p>
+            </div>
+
+            <div class="field">
+              <label for="d-where">Where are you giving from?</label>
+              <select id="d-where" name="where">
+                <option value="uganda">Inside Uganda (mobile money or bank)</option>
+                <option value="abroad">Outside Uganda (international transfer)</option>
+              </select>
+            </div>
+
+            <div class="honeypot" aria-hidden="true">
+              <label for="d-website">Leave this field empty</label>
+              <input id="d-website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <p class="form-status" data-status role="status"></p>
+            <button type="submit" class="btn btn--primary btn--block">Continue</button>
+            <p class="fineprint">No card details are collected on this page and none are handled anywhere on this site. We reply with the payment details that fit where you are giving from, and confirm receipt in writing.</p>
+          </form>
+
+        </div>
+      </div>
+
+      <div>
+        <p class="eyebrow">Right now</p>
+        <h2>Three ways to give today</h2>
+        <span class="rule" aria-hidden="true"></span>
+        <p>Our online giving platform is being set up. Until it is live, each of these routes reaches the same account and the same acknowledgement.</p>
+
+        <div class="grid" style="gap: 1rem; margin-top: 1.5rem;">
+          <div class="service-card">
+            <img src="assets/icons/mail-emerald.svg" alt="" width="32" height="32">
+            <h3>Email us</h3>
+            <p>Tell us the amount and the fund you have in mind. We reply with bank and mobile-money details, and a receipt once the gift lands.</p>
+            <a class="text-link" href="mailto:boundlessgracialtd@gmail.com?subject=I%20would%20like%20to%20donate">Start by email</a>
+          </div>
+          <div class="service-card">
+            <img src="assets/icons/phone-gold.svg" alt="" width="32" height="32">
+            <h3>Call the office</h3>
+            <p>Monday to Friday, 8:30am&ndash;5:00pm East Africa Time. Useful if you are giving from within Uganda or want to set up a standing order.</p>
+            <a class="text-link" href="tel:+256773130832">+256 773 130 832</a>
+          </div>
+          <div class="service-card">
+            <img src="assets/icons/users-emerald.svg" alt="" width="32" height="32">
+            <h3>Use the contact form</h3>
+            <p>Prefer to write it all down? The contact form reaches the same inbox, and you can ask for the due-diligence pack at the same time.</p>
+            <a class="text-link" href="contact.html">Open the form</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--surface" aria-labelledby="d-funds">
+    <div class="wrap">
+      <div class="head-center">
+        <p class="eyebrow">Where it goes</p>
+        <h2 id="d-funds">What each fund is coded to</h2>
+        <span class="rule rule--center" aria-hidden="true"></span>
+      </div>
+
+      <ul class="values-grid">
+        <li class="value-card">
+          <span class="value-card__icon"><img src="assets/icons/graduation-cap-emerald.svg" alt="" width="22" height="22"></span>
+          <span>
+            <strong>Education</strong>
+            <p>Fees, uniform, scholastic materials and remedial support, with a named case worker following each child. <a href="we-educate.html">We Educate</a>.</p>
+          </span>
+        </li>
+        <li class="value-card">
+          <span class="value-card__icon"><img src="assets/icons/heart-pulse-emerald.svg" alt="" width="22" height="22"></span>
+          <span>
+            <strong>Health, nutrition and WASH</strong>
+            <p>The consultation, the medicine, the referral transport and the follow-up visit &mdash; plus safe water points and hygiene promotion. <a href="we-heal.html">We Heal</a>.</p>
+          </span>
+        </li>
+        <li class="value-card">
+          <span class="value-card__icon"><img src="assets/icons/shield-check-emerald.svg" alt="" width="22" height="22"></span>
+          <span>
+            <strong>Child protection</strong>
+            <p>Case management, psychosocial support, family tracing and the community protection committees that keep working after we leave. <a href="we-protect.html">We Protect</a>.</p>
+          </span>
+        </li>
+        <li class="value-card">
+          <span class="value-card__icon"><img src="assets/icons/sprout-emerald.svg" alt="" width="22" height="22"></span>
+          <span>
+            <strong>Livelihoods</strong>
+            <p>Savings groups, enterprise training and start-up grants, so a household can carry its own children. <a href="we-empower.html">We Empower</a>.</p>
+          </span>
+        </li>
+        <li class="value-card">
+          <span class="value-card__icon"><img src="assets/icons/house-heart-emerald.svg" alt="" width="22" height="22"></span>
+          <span>
+            <strong>The Mpara clinic appeal</strong>
+            <p>A restricted fund: bricks, cement, the maternal unit and the solar cold chain for a facility that removes the half-day walk entirely. <a href="build-a-clinic.html">Build a Clinic</a>.</p>
+          </span>
+        </li>
+        <li class="value-card">
+          <span class="value-card__icon"><img src="assets/icons/target-emerald.svg" alt="" width="22" height="22"></span>
+          <span>
+            <strong>Wherever the need is greatest</strong>
+            <p>Unrestricted. It pays for the things restricted funding rarely covers &mdash; the finance officer, the audit, the vehicle that reaches the outreach site.</p>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="cta-band__inner">
+      <h2>Regular beats large</h2>
+      <span class="rule rule--center" aria-hidden="true"></span>
+      <p>A monthly gift is the only income a case worker can plan a school year or a treatment course around. Sponsorship is the simplest way to set one up.</p>
+      <div class="btn-row btn-row--center">
+        <a class="btn btn--primary" href="sponsor-a-child.html">Sponsor a Child</a>
+        <a class="btn btn--ghost" href="our-impact.html">See how we report</a>
+      </div>
+    </div>
+  </section>
+
+</main>
