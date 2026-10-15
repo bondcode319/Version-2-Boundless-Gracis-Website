@@ -34,16 +34,17 @@
 
           <h3 style="margin-top: 1.5rem;">Choose an amount (USD)</h3>
           <div class="amount-grid" data-amounts role="group" aria-label="Suggested amounts">
-            <button type="button" data-value="20" aria-pressed="false">$20</button>
-            <button type="button" data-value="38" aria-pressed="true">$38</button>
-            <button type="button" data-value="75" aria-pressed="false">$75</button>
-            <button type="button" data-value="150" aria-pressed="false">$150</button>
+            <!--! TODO(client): confirm preset amounts against the donor base. -->
+            <button type="button" data-value="25" aria-pressed="false">$25</button>
+            <button type="button" data-value="50" aria-pressed="true">$50</button>
+            <button type="button" data-value="100" aria-pressed="false">$100</button>
+            <button type="button" data-value="200" aria-pressed="false">$200</button>
           </div>
 
           <form class="form-grid" data-validate data-success="thank-you.html" novalidate>
             <div class="field">
               <label for="d-amount">Or enter your own amount <span class="req">*</span></label>
-              <input id="d-amount" name="amount" type="text" inputmode="decimal" value="38" data-amount-custom required>
+              <input id="d-amount" name="amount" type="text" inputmode="decimal" value="50" data-amount-custom required>
               <p class="field-error" data-err></p>
             </div>
 
@@ -55,7 +56,7 @@
                 <option value="health">Health, nutrition and WASH</option>
                 <option value="protection">Child protection and family strengthening</option>
                 <option value="livelihoods">Livelihoods and caregiver empowerment</option>
-                <option value="clinic">The Mpara clinic appeal</option>
+                <option value="clinic">The Mpara health unit appeal</option>
               </select>
             </div>
 
@@ -135,35 +136,35 @@
           <span class="value-card__icon"><img src="assets/icons/graduation-cap-emerald.svg" alt="" width="22" height="22"></span>
           <span>
             <strong>Education</strong>
-            <p>Fees, uniform, scholastic materials and remedial support, with a named case worker following each child. <a href="we-educate.html">We Educate</a>.</p>
+            <p>Fees, uniform, scholastic materials and remedial support, with a named case worker following each child. <a href="grace-to-learn.html">Grace to Learn</a>.</p>
           </span>
         </li>
         <li class="value-card">
           <span class="value-card__icon"><img src="assets/icons/heart-pulse-emerald.svg" alt="" width="22" height="22"></span>
           <span>
             <strong>Health, nutrition and WASH</strong>
-            <p>The consultation, the medicine, the referral transport and the follow-up visit &mdash; plus safe water points and hygiene promotion. <a href="we-heal.html">We Heal</a>.</p>
+            <p>The consultation, the medicine, the referral transport and the follow-up visit &mdash; plus safe water points and hygiene promotion. <a href="grace-to-thrive.html">Grace to Thrive</a>.</p>
           </span>
         </li>
         <li class="value-card">
           <span class="value-card__icon"><img src="assets/icons/shield-check-emerald.svg" alt="" width="22" height="22"></span>
           <span>
             <strong>Child protection</strong>
-            <p>Case management, psychosocial support, family tracing and the community protection committees that keep working after we leave. <a href="we-protect.html">We Protect</a>.</p>
+            <p>Case management, psychosocial support, family tracing and the community protection committees that keep working after we leave. <a href="grace-to-belong.html">Grace to Belong</a>.</p>
           </span>
         </li>
         <li class="value-card">
           <span class="value-card__icon"><img src="assets/icons/sprout-emerald.svg" alt="" width="22" height="22"></span>
           <span>
             <strong>Livelihoods</strong>
-            <p>Savings groups, enterprise training and start-up grants, so a household can carry its own children. <a href="we-empower.html">We Empower</a>.</p>
+            <p>Savings groups, enterprise training and start-up grants, so a family can stand on its own. <a href="grace-to-rise.html">Grace to Rise</a>.</p>
           </span>
         </li>
         <li class="value-card">
           <span class="value-card__icon"><img src="assets/icons/house-heart-emerald.svg" alt="" width="22" height="22"></span>
           <span>
-            <strong>The Mpara clinic appeal</strong>
-            <p>A restricted fund: bricks, cement, the maternal unit and the solar cold chain for a facility that removes the half-day walk entirely. <a href="build-a-clinic.html">Build a Clinic</a>.</p>
+            <strong>The Mpara health unit appeal</strong>
+            <p>A restricted fund for construction, the maternal unit, solar power and vaccine storage at a permanent health unit in Mpara. <a href="mpara-health-unit.html">The Mpara Health Unit</a>.</p>
           </span>
         </li>
         <li class="value-card">
@@ -183,7 +184,7 @@
       <span class="rule rule--center" aria-hidden="true"></span>
       <p>A monthly gift is the only income a case worker can plan a school year or a treatment course around. Sponsorship is the simplest way to set one up.</p>
       <div class="btn-row btn-row--center">
-        <a class="btn btn--primary" href="sponsor-a-child.html">Sponsor a Child</a>
+        <a class="btn btn--primary" href="sponsor-a-learner.html">Sponsor a Learner</a>
         <a class="btn btn--ghost" href="our-impact.html">See how we report</a>
       </div>
     </div>

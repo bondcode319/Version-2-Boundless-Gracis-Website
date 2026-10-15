@@ -358,14 +358,16 @@ p:last-child { margin-bottom: 0; }
 
 .section--ink .btn--ghost,
 .cta-photo .btn--ghost,
-.page-hero .btn--ghost {
+.page-hero .btn--ghost,
+.hero .btn--ghost {
   color: var(--white);
   border-color: rgba(255, 255, 255, 0.55);
 }
 
 .section--ink .btn--ghost:hover,
 .cta-photo .btn--ghost:hover,
-.page-hero .btn--ghost:hover {
+.page-hero .btn--ghost:hover,
+.hero .btn--ghost:hover {
   background: var(--white);
   border-color: var(--white);
   color: var(--ink);

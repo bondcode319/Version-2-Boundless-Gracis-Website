@@ -97,7 +97,7 @@
     {
       "file": "what-we-do.html",
       "navSlug": "/our-work",
-      "title": "What We Do — Boundless Gracia Children's Foundation",
+      "title": "Our Work — Boundless Gracia Children's Foundation",
       "description": "Four programme areas delivered as a single package: education and child development, health and nutrition, child protection, and community livelihoods.",
       "breadcrumb": [
         { "label": "Home", "href": "index.html" },
@@ -106,54 +106,54 @@
       "priority": "0.9"
     },
     {
-      "file": "we-educate.html",
+      "file": "grace-to-learn.html",
       "navSlug": "/our-work",
-      "title": "We Educate — Education & Child Development — Boundless Gracia",
+      "title": "Grace to Learn — Education & Child Development | Boundless Gracia",
       "description": "Child sponsorship, scholastic support, early childhood development, remedial learning, vocational and technical training, mentorship and life skills.",
       "breadcrumb": [
         { "label": "Home", "href": "index.html" },
         { "label": "Our Work", "href": "what-we-do.html" },
-        { "label": "We Educate" }
+        { "label": "Grace to Learn" }
       ]
     },
     {
-      "file": "we-heal.html",
+      "file": "grace-to-thrive.html",
       "navSlug": "/our-work",
-      "title": "We Heal — Health, Nutrition & WASH — Boundless Gracia",
+      "title": "Grace to Thrive — Health, Nutrition & WASH | Boundless Gracia",
       "description": "Community health outreaches, nutrition screening and supplementary feeding, immunisation and maternal referral, safe water, sanitation and hygiene.",
       "breadcrumb": [
         { "label": "Home", "href": "index.html" },
         { "label": "Our Work", "href": "what-we-do.html" },
-        { "label": "We Heal" }
+        { "label": "Grace to Thrive" }
       ]
     },
     {
-      "file": "we-protect.html",
+      "file": "grace-to-belong.html",
       "navSlug": "/our-work",
-      "title": "We Protect — Child Protection & Family Strengthening — Boundless Gracia",
+      "title": "Grace to Belong — Child Protection & Family Strengthening | Boundless Gracia",
       "description": "Protecting children from abuse, neglect, exploitation, child labour, trafficking and early marriage through prevention, case management and family-based care.",
       "breadcrumb": [
         { "label": "Home", "href": "index.html" },
         { "label": "Our Work", "href": "what-we-do.html" },
-        { "label": "We Protect" }
+        { "label": "Grace to Belong" }
       ]
     },
     {
-      "file": "we-empower.html",
+      "file": "grace-to-rise.html",
       "navSlug": "/our-work",
-      "title": "We Empower — Livelihoods & Economic Empowerment — Boundless Gracia",
+      "title": "Grace to Rise — Livelihoods & Economic Empowerment | Boundless Gracia",
       "description": "Savings groups, enterprise and financial literacy training, start-up grants, climate-smart agriculture and a women's skilling centre for caregivers.",
       "breadcrumb": [
         { "label": "Home", "href": "index.html" },
         { "label": "Our Work", "href": "what-we-do.html" },
-        { "label": "We Empower" }
+        { "label": "Grace to Rise" }
       ]
     },
     {
       "file": "get-involved.html",
       "navSlug": "/get-involved",
       "title": "Get Involved — Boundless Gracia Children's Foundation",
-      "description": "Every way to stand with a child: sponsorship, medical care, caregiver livelihoods, the Mpara clinic appeal, volunteering, outreach missions and partnership.",
+      "description": "Every way to stand with a child: sponsorship, medical care, caregiver livelihoods, the Mpara clinic appeal, volunteering, field weeks and partnership.",
       "breadcrumb": [
         { "label": "Home", "href": "index.html" },
         { "label": "Get Involved" }
@@ -161,47 +161,47 @@
       "priority": "0.9"
     },
     {
-      "file": "sponsor-a-child.html",
+      "file": "sponsor-a-learner.html",
       "navSlug": "/get-involved",
-      "title": "Sponsor a Child — Boundless Gracia Children's Foundation",
-      "description": "Sponsor a child through primary, secondary or vocational education — what it covers, what it costs, and how sponsorship is matched and reported back to you.",
+      "title": "Sponsor a Learner — Boundless Gracia Children's Foundation",
+      "description": "Child sponsorship with Boundless Gracia: sponsor a learner through primary, secondary or vocational education — what it covers, what it costs, and how sponsorship is matched and reported back to you.",
       "breadcrumb": [
         { "label": "Home", "href": "index.html" },
         { "label": "Get Involved", "href": "get-involved.html" },
-        { "label": "Sponsor a Child" }
+        { "label": "Sponsor a Learner" }
       ]
     },
     {
-      "file": "heal-a-child.html",
+      "file": "keep-a-child-well.html",
       "navSlug": "/get-involved",
-      "title": "Heal a Child — Boundless Gracia Children's Foundation",
+      "title": "Keep a Child Well — Boundless Gracia Children's Foundation",
       "description": "Fund the consultation, the medicine, the referral transport and the follow-up visit for a child whose household could not have paid for any of them.",
       "breadcrumb": [
         { "label": "Home", "href": "index.html" },
         { "label": "Get Involved", "href": "get-involved.html" },
-        { "label": "Heal a Child" }
+        { "label": "Keep a Child Well" }
       ]
     },
     {
-      "file": "empower-a-mother.html",
+      "file": "back-a-caregiver.html",
       "navSlug": "/get-involved",
-      "title": "Empower a Mother — Boundless Gracia Children's Foundation",
-      "description": "Back a caregiver into a savings group, enterprise training and a start-up grant, so a household can carry its own children.",
+      "title": "Back a Caregiver — Boundless Gracia Children's Foundation",
+      "description": "Back a caregiver into a savings group, enterprise training and a start-up grant, so a family can provide for its own children.",
       "breadcrumb": [
         { "label": "Home", "href": "index.html" },
         { "label": "Get Involved", "href": "get-involved.html" },
-        { "label": "Empower a Mother" }
+        { "label": "Back a Caregiver" }
       ]
     },
     {
-      "file": "build-a-clinic.html",
+      "file": "mpara-health-unit.html",
       "navSlug": "/get-involved",
-      "title": "Build a Clinic — Boundless Gracia Children's Foundation",
-      "description": "Help build a health facility at Mpara so that care no longer depends on a half-day walk — the plan, the budget, and where the appeal currently stands.",
+      "title": "The Mpara Health Unit — Boundless Gracia Children's Foundation",
+      "description": "Help fund a permanent outpatient and maternal health unit at Mpara — the plan, the phased budget, and where the appeal currently stands.",
       "breadcrumb": [
         { "label": "Home", "href": "index.html" },
         { "label": "Get Involved", "href": "get-involved.html" },
-        { "label": "Build a Clinic" }
+        { "label": "The Mpara Health Unit" }
       ]
     },
     {
@@ -216,14 +216,14 @@
       ]
     },
     {
-      "file": "outreach-missions.html",
+      "file": "field-weeks.html",
       "navSlug": "/get-involved",
-      "title": "Outreach Missions — Boundless Gracia Children's Foundation",
-      "description": "Join a Boundless Gracia outreach mission to Kyegegwa District — what happens on one, what it costs, and how to apply.",
+      "title": "Field Weeks — Boundless Gracia Children's Foundation",
+      "description": "Join a Boundless Gracia field week in Kyegegwa District — what happens on one, what it costs, and how to apply.",
       "breadcrumb": [
         { "label": "Home", "href": "index.html" },
         { "label": "Get Involved", "href": "get-involved.html" },
-        { "label": "Outreach Missions" }
+        { "label": "Field Weeks" }
       ]
     },
     {
